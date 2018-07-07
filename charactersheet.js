@@ -1,6 +1,6 @@
 //Character Sheet JSON
-
-var character = {
+//Sergey recommends breaking this down into little objects and passing them into the main constructor - Implement after identifying all other structures, break this down 
+var character = { 
 	"Name":"String",
 	"Class":"String",
 	"Level":0,
@@ -14,7 +14,7 @@ var character = {
 		"Con":0,
 		"Int":0,
 		"Wis":0,
-		"Cha":0,
+		"Cha":0
 	},
 	"SavingThrows":{
 		"Str":0,
@@ -22,7 +22,7 @@ var character = {
 		"Con":0,
 		"Int":0,
 		"Wis":0,
-		"Cha":0,
+		"Cha":0
 	},
 	"Skills":{
 		"Acrobatics":{
@@ -96,7 +96,7 @@ var character = {
 		"Survival":{
 			"Proficient":false,
 			"Rank":0
-		},
+		}
 	},
 	"Passive Perception":0,
 	"ProficiencyBonus":0,
@@ -110,7 +110,7 @@ var character = {
 		"1d6":0,
 		"1d8":0,
 		"1d10":0,
-		"1d12":0,
+		"1d12":0
 	},
 	"PersonalityTraits":"String",
 	"Ideals":"String",
@@ -118,7 +118,7 @@ var character = {
 	"Flaws":"String",
 	"DeathSaves":{
 		"Successes":0,
-		"Failures":0,
+		"Failures":0
 	},
 	"Traits":{
 
@@ -132,14 +132,14 @@ var character = {
 					"1d6":0,
 					"1d8":0,
 					"1d10":0,
-					"1d12":0,
+					"1d12":0
 				},
 				"DamageType":{
 					"Slashing":false,
 					"Bludgeoning":false,
-					"Piercing":false, 
+					"Piercing":false
 				},
-				"AttackBonus":0,
+				"AttackBonus":0
 			},
 		},
 	},
@@ -149,9 +149,9 @@ var character = {
 	"Money":{
 		"Copper":0,
 		"Silver":0,
-		"EP":0, // No idea what the fuck EP is
+		"Electrum":0, 
 		"Gold":0,
-		"Platinum":0,
+		"Platinum":0
 	},
 	"Features":{
 
@@ -159,7 +159,7 @@ var character = {
 	"Age":0,
 	"Height":{
 		"Feet":0,
-		"Inches":0,
+		"Inches":0
 	},
 	"Weight":0,
 	"Eyes":"None",
@@ -176,12 +176,32 @@ var character = {
 			"Con":false,
 			"Int":false,
 			"Wis":false,
-			"Cha":false,
+			"Cha":false
 		},
 		"SpellSaveDC":0,
 		"SpellAttackBonus":0,
 		"SpellLevels":{
 		"Cantrips":{
+			"MageHand":{
+				"SpellName":"Name",
+				"SpellRequirements":{
+					"Requirements":{
+						"Visual":false,
+						"Somatic":false,
+						"...":false // More to add here
+					}
+					"Component1":"Something"
+				},
+				"Damage":{
+					"1d4":0,
+					"1d6":0,
+					"1d8":0,
+					"1d10":0,
+					"1d12":0
+				},
+				"Range":0,
+				"Duration":0
+				},
 			},
 		"SpellLevel1":{
 			},
@@ -200,7 +220,7 @@ var character = {
 		"SpellLevel8":{
 			},
 		"SpellLevel9":{
-			},	
+			}	
 		},
 	},
 }
