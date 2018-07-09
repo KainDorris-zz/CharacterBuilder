@@ -1,6 +1,6 @@
-function CharacterIdentifier(name, class, level, background, playername, race, alignment, experiencepoints){
+function CharacterIdentifier(name, playerclass, level, background, playername, race, alignment, experiencepoints){
 	this.name = name;
-	this.class = class;
+	this.playerclass = playerclass;
 	this.level = level;
 	this.background = background;
 	this.playername = playername;
@@ -90,7 +90,7 @@ function SpellCastingTraits(spellcastingability, spellsavedc,spellattackbonus) {
 };
 
 function Spells(spelllevel, spellname, spellrequirements, spellcomponents, spelldamage, spelleffect, spellrange, spellduration) {
-	
+
 };
 
 
